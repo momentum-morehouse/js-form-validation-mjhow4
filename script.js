@@ -37,4 +37,14 @@ form = document.querySelector("#parking-form")
          cvvDiv.append(cvvError)
          //can't figure out why it prints twice on one submit
      }
+     // step 4
+     totalDiv = document.querySelector('#total')
+     numberOfDays = document.querySelector('#days')
+     console.log(numberOfDays.value)
+     numDays = numberOfDays.value
+     //console.log(totalDiv)
+     totalDiv.textContent = "Total Parking Cost: $" + (numDays * 5)
+ 
     })
+
+   
